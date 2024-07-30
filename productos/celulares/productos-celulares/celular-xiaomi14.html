@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaomi 14 Ultra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/img/ktronix.png" alt="Logo" width="80" height="25" class="d-inline-block align-text-top">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../../Categorias/categorias.html">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>
+                    <label class="form-check-label" for="darkModeSwitch">Dark Mode</label>
+                </div>
+            </div>
+        </div>
+    </nav>
+  <div class="d-flex flex-row justify-content-center align-items-start flex-wrap m-5">
+    <div class="card w-50 mx-3 mb-1" style="width: 18rem;" id="carrousel">
+        <div id="carouselExampleRide" class="carousel carousel-dark slide w-100" data-bs-ride="true">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../imagenes/xiaomi14.png" class="d-block w-100" alt="Imagen 1">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <select class="form-select" aria-label="Default select example">
+              <option selected disabled>Forma de pago</option>
+              <option value="1">Efectivo/transferencia</option>
+              <option value="2">Debito</option>
+              <option value="2">Credito</option>
+            </select>
+          </li>
+          <li class="list-group-item d-flex justify-content-center flex-wrap">          
+            <a href="../celulares.html" class="btn btn-primary mx-1 mb-1" id="boton" onclick="addCarrito()">Añadir al carrito</a>
+            <a href="../celulares.html" class="btn btn-primary mx-1 mb-1" id="boton" onclick="buy()">Comprar</a>
+          </li>
+      </ul>
+    </div>
+
+    <div class="card w-70" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title" id="titulo"><strong>Xiaomi 14 Ultra</strong></h5>
+        <strong id="precio">$ 1.649.999</strong>
+        </br>
+        &#9733 &#9733 &#9733 &#10025 &#10025 3.7 (128)
+        <p class="card-text">
+            El Xiaomi 14 Ultra combina un diseño elegante inspirado en el modelo clásico M10-P de LEICA con características modernas. Su pantalla Liquid Display es flexible y se dobla profundamente alrededor de los cuatro lados y esquinas. La cámara, diseñada conjuntamente con Leica, ofrece una calidad de imagen excepcional. Al igual que los otros modelos, su durabilidad está garantizada con el marco de aluminio y el cristal de protección Xiaomi.</p>
+      </div>
+  </div>  
+  </div>
+  <footer class="d-flex flex-wrap justify-content-end align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/index.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <img src="/img/ktronix.png" alt="Logo" width="50" height="15">
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Ktronix, Inc</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter" width="24"
+                    height="24"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram" width="24"
+                    height="24"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook" width="24"
+                    height="24"></i></a></li>
+    </ul>
+</footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/js/scripts.js"></script>
+    <script>
+      const addCarrito = () => {
+          alert("Producto agregado al carrito con exito!");
+      }
+
+      const buy = () => {
+        alert("Producto comprado con exito!");
+      }
+    </script>
+</body>
+</html>

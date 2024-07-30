@@ -1,0 +1,207 @@
+:root{
+    --blue-color:#1E0E62;
+    --ultramarine-color:#2F1893;
+    --turquoise-color: #25DAC5;
+    --white-color:#F2F2F2;
+    --platinum-color:#E0E0E0;
+    --silver-color:#CCCCCC;
+
+}
+
+.roboto-serif {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 113.9,
+      "GRAD" 0;
+}
+.roboto-serif-regular{
+    font-family: "Roboto serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h5{
+    font-family:"Roboto Serif", serif; ;
+}
+p{
+    font-family: "Roboto",sans-serif !important;
+}
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 550px; /* Aumentar la altura del carrusel */
+    object-fit: contain;
+}
+
+#carouselOfertas {
+    max-width: 800px;
+    margin: auto;
+}
+
+.navbar {
+    background-color: var(--platinum-color) !important;
+}
+
+.hero-section {
+    background: rgb(30,14,98);
+    background: radial-gradient(circle, rgba(30,14,98,1) 0%, rgba(37,218,197,1) 35%, rgba(47,24,147,1) 100%) ;
+    height: 30vh;
+}
+
+.card img {
+    height: 400px;
+    object-fit: contain;
+}
+
+.btn-primary {
+    background-color: rgb(30, 68, 18);
+    color: #c8d5e4;
+    border: 1px solid #ddd;
+}
+/* Estilos para el formulario de contacto */
+.contact-section {
+    background-color: #142128; /* Color de fondo azul */
+    color: white;
+    padding: 3rem 0;
+}
+
+.contact-section h1 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: #555; /* Color oscuro para las etiquetas dentro del formulario */
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #333; /* Color oscuro para el texto de entrada */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #142128;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    color: white;
+}
+
+.contact-info h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 2.5rem !important;
+    }
+    h2{
+        font-size: 1.5rem !important;
+    }
+    p{
+        font-size: 1rem !important;
+    }
+    .btn-categorias{
+        margin-top: 0 !important;
+    }
+    .contact-info {
+        margin-top: 2rem;
+    }
+    .hero-section{
+        height: 55vh;
+    }
+    .card img {
+        height: 150px;
+        object-fit: contain;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: 220px; /* Aumentar la altura del carrusel */
+        object-fit: cover;
+    }
+    
+}
+@media (min-width: 768px) {
+    .carousel-item img {
+        width: 100%;
+        height: 500px; /* Aumentar la altura del carrusel */
+        object-fit: cover;
+    }
+}
+
+/* Estilos para el botón de volver a inicio */
+.back-to-home {
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+.back-to-home:hover {
+    background-color: var(--blue-color);
+    color:white;
+}
+.btn-primary{
+    background-color: var(--turquoise-color);
+    border: none;
+    color: var(--white-color);
+}
+.btn-primary:hover{
+    background-color: var(--blue-color);
+}
+.icono{
+    width: 40px;
+    height: 45px;
+    filter: invert(100%) sepia(94%) saturate(100%) hue-rotate(187deg) brightness(115%) contrast(90%);
+}
+
+

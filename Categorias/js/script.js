@@ -17,12 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
           if (this.checked) {
             htmlElement.setAttribute("data-bs-theme", "dark");
             bodyElement.classList.add("dark-mode");
-            localStorage.setItem("bsTheme", "dark");
           } else {
             htmlElement.setAttribute("data-bs-theme", "light");
             bodyElement.classList.remove("dark-mode")
-            localStorage.setItem("bsTheme", "light");   
-    
           }
         });
       } else {

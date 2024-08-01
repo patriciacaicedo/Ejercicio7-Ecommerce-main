@@ -62,40 +62,12 @@ p{
         radial-gradient(circle at 93% 95%, hsla(230.29, 100%, 23%, 1) 0%, transparent 66%),
         radial-gradient(circle at 89% 8%, hsla(243.52, 100%, 9%, 1) 0%, transparent 150%);
     background-blend-mode: normal, normal, normal, normal;
-    min-height: 500px;
+    min-height: 100px;
     width: 100%;
     padding: 50px 0;
     position: relative;
 }
 
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: inherit;
-    z-index: 1;
-}
-
-.hero-section .container {
-    position: relative;
-    z-index: 2;
-}
-
-.hero-section h1, 
-.hero-section p, 
-.hero-section .btn {
-    position: relative;
-    z-index: 3;
-}
-
-@media (max-width: 768px) {
-    .hero-section {
-        min-height: 300px;
-    }
-}
 .card img {
     height: 400px;
     object-fit: contain;

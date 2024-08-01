@@ -50,20 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Campo de búsqueda no encontrado");
     }
 
-    // Mostrar la ventana emergente automáticamente después de 3 segundos
-    const offerModalElement = document.getElementById('offerModal');
-
-    if (offerModalElement) {
-        console.log("Modal de oferta encontrado");
-        setTimeout(function() {
-          var offerModal = new bootstrap.Modal(offerModalElement);
-          offerModal.show();
-          offerModalElement.querySelector('.modal-content').style.backgroundColor = '#ccc'; // Set modal background color
-        }, 3000);
-    } else {
-        console.log("Modal de oferta no encontrado");
-        
-    }
 
     // Cambio de color del botón
     var botones = document.querySelectorAll('#miBoton');
